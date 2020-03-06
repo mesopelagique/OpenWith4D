@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+
+if [ "$#" -eq 1 ]; then
+    wd=$1
+else
+    wd="."
+fi
+
+if [ -d "$wd" ]; then
+    echo "Opening projet folder"
+    open $wd/Project/*.4DProject
+else
+    file=$wd
+    filename=$(basename -- "$file")
+    extension="${filename##*.}"
+
+    if [ "$extension" == "4DProject" ]; then
+        echo "Opening projet file"
+        open "$file"
+    elif [ "$extension" == "4dm" ]; then
+        wd=$(dirname $file)
+        wd=$(dirname $wd)
+        sourceDirName=$(basename -- "$wd")
+        if [ "$sourceDirName" == "Sources" ]; then
+            echo "Opening project"
+            open $wd/../*.4DProject
+            echo "and source file..."
+            sleep 3 # wait project open...
+            open $file
+        else
+            >&2 echo "Cannot find project for $file" 
+            exit 1
+        fi
+    else
+        >&2 echo "Cannot open $file" 
+        exit 1
+    fi
+fi
