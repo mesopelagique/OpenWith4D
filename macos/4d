@@ -7,7 +7,7 @@ else
 fi
 
 if [ -d "$wd" ]; then
-    echo "Opening projet folder"
+    echo "Opening project folder"
     open $wd/Project/*.4DProject
 else
     file=$wd
