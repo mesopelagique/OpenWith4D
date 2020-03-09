@@ -40,6 +40,5 @@ or
 
 Download and add execution right
 ```bash
-curl -L https://raw.githubusercontent.com/mesopelagique/scripts/master/macos/4d -o /usr/local/bin/4d
-chmod +x /usr/local/bin/4d
+curl -L https://raw.githubusercontent.com/mesopelagique/scripts/master/macos/4d -o /usr/local/bin/4d && chmod +x /usr/local/bin/4d
 ```
