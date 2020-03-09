@@ -42,3 +42,15 @@ Download and add execution right
 ```bash
 curl -L https://raw.githubusercontent.com/mesopelagique/scripts/master/macos/4d -o /usr/local/bin/4d && chmod +x /usr/local/bin/4d
 ```
+
+### Use with other tools
+
+#### SourceTree (Git GUI)
+
+[SourceTree](https://www.sourcetreeapp.com/) allow you to use custom action. 
+
+![SourceTreeAction](assets/sourcetree-action.png)
+
+So using a shortcut, you can open your 4d project in 4D.
+
+💡You can achieve this with other tools. (You can Pull Request this project to explain how)
