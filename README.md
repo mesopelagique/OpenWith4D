@@ -39,8 +39,15 @@ or
 ### Install on macOS
 
 Download and add execution right
+
 ```bash
 curl -L https://raw.githubusercontent.com/mesopelagique/scripts/master/macos/4d -o /usr/local/bin/4d && chmod +x /usr/local/bin/4d
+```
+
+#### Use sudo if you have no right access to /usr/local/bin/
+
+```bash
+sudo curl -L https://raw.githubusercontent.com/mesopelagique/scripts/master/macos/4d -o /usr/local/bin/4d && sudo chmod +x /usr/local/bin/4d
 ```
 
 ### Use with other tools
