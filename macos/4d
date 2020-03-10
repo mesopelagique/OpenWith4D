@@ -8,7 +8,7 @@ fi
 
 if [ -d "$wd" ]; then
     echo "Opening project folder"
-    open $wd/Project/*.4DProject
+    open "$wd/Project/*.4DProject"
 else
     file=$wd
     filename=$(basename -- "$file")
@@ -23,7 +23,7 @@ else
         sourceDirName=$(basename -- "$wd")
         if [ "$sourceDirName" == "Sources" ]; then
             echo "Opening project"
-            open $wd/../*.4DProject
+            open "$wd/../*.4DProject"
             echo "and source file..."
             sleep 3 # wait project open...
             open $file
