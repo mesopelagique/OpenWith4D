@@ -7,8 +7,15 @@ else
 fi
 
 if [ -d "$wd" ]; then
-    echo "Opening projet folder"
-    open "$wd"/Project/*.4DProject
+    
+    projects=$(ls -l "$wd"/Project/*.4DProject 2>/dev/null | wc -l )
+    if [ "$projects" -eq 0 ];then
+       echo "Opening 4D"
+       open -a "4D"
+    else
+        echo "Opening projet folder"
+        open "$wd"/Project/*.4DProject
+    fi
 else
     file=$wd
     filename=$(basename -- "$file")
@@ -32,7 +39,7 @@ else
             exit 1
         fi
     else
-        >&2 echo "Cannot open $file" 
+        >&2 echo "Cannot open $file with 4d" 
         exit 1
     fi
 fi
