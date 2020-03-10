@@ -8,6 +8,13 @@ Open with 4D folder, project or source file using the command line
 
 ### Usage
 
+#### Open 4d
+
+```
+4d 
+```
+same as `open -a "4D"`
+
 #### Open a projet root folder
 
 ```
