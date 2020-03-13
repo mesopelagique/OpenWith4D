@@ -25,8 +25,8 @@ else
         echo "Opening project file"
         open "$file"
     elif [ "$extension" == "4dm" ]; then
-        wd=$(dirname $file)
-        wd=$(dirname $wd)
+        wd=$(dirname "$file")
+        wd=$(dirname "$wd")
         sourceDirName=$(basename -- "$wd")
         if [ "$sourceDirName" == "Sources" ]; then
             echo "Opening project"
