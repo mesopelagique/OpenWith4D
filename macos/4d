@@ -33,7 +33,7 @@ else
             open "$wd"/../*.4DProject
             echo "and source file..."
             sleep 3 # wait project open...
-            open $file
+            open "$file"
         else
             >&2 echo "Cannot find project for $file" 
             exit 1
