@@ -1,0 +1,11 @@
+{
+    "name": "Open in 4D",
+    "description": "open current file or folder in 4D",
+    "version": "1.0",
+    "author": "mesopelagique",
+    "homepage": "https://github.com/mesopelagique/scripts",
+    "paletroExtensionVersion": "1.0",
+    "shortcut": "",
+    "app": "Finder.app",
+    "entry": "command.scpt"
+}
