@@ -9,7 +9,7 @@ Utility scripts to open with 4D for macOS from Terminal and other apps.
 Download and add execution right
 
 ```bash
-sudo curl -L https://raw.githubusercontent.com/mesopelagique/scripts/master/macos/4d -o /usr/local/bin/4d && chmod +x /usr/local/bin/4d
+sudo curl -L https://raw.githubusercontent.com/mesopelagique/OpenWith4D/master/macos/4d -o /usr/local/bin/4d && chmod +x /usr/local/bin/4d
 ```
 
 > 💡 Your password will be prompted to install in `/usr/local/bin`
