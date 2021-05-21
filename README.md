@@ -2,7 +2,7 @@
 
 Utility scripts to open with 4D for macOS from Terminal and other apps.
 
-> If its a source file (`.4dm`), it will open the parent project, and then file.
+> If its a source file (`.4dm`), it will open the parent project, and then file. The current version of 4D do not allow that and just do nothing if its not a file of the current base.
 
 ## Install on macOS
 
