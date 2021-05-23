@@ -2,17 +2,23 @@
 
 Utility scripts to open with 4D for macOS from Terminal and other apps.
 
-> If its a source file (`.4dm`), it will open the parent project, and then file. The current version of 4D do not allow that and just do nothing if its not a file of the current base.
+## Why?
+
+The current version of 4D do not allow to open the project folder or a source file not in current opened project.
+
+This script will find associated project file to open it.
 
 ## Install on macOS
 
-Download and add execution right
+Download using terminal
 
 ```bash
 sudo curl -L https://raw.githubusercontent.com/mesopelagique/OpenWith4D/master/macos/4d -o /usr/local/bin/4d && chmod +x /usr/local/bin/4d
 ```
 
 > 💡 Your password will be prompted to install in `/usr/local/bin`
+
+or If you need only [quick action](#quick-action) section
 
 ## Usage
 
@@ -79,3 +85,14 @@ Download this project source file and open folder `openin4d.pext`, it will insta
 ### Use with ...
 
 💡 You can achieve this with other tools. (You can Pull Request this project to explain how)
+
+
+## Quick Action
+
+MacOs allow you to create with automator some quick action that could be avaiable in Finder, and oher app
+
+![quickaction](assets/quickaction.png)
+
+You can download a [zipped version in release](https://github.com/mesopelagique/OpenWith4D/releases/download/0.0.1/Open.with.4D.workflow.zip) or download this project sources
+
+Open the workflow to install it.
